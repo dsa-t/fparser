@@ -18,6 +18,8 @@ if(APPLE AND NOT CMAKE_INSTALL_NAME_DIR)
   set(CMAKE_INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}")
 endif()
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 #set(HEADERS fparser.hh fpconfig.hh fptypes.hh)
 set(SOURCES fparser.cc fpoptimizer.cc)
 
